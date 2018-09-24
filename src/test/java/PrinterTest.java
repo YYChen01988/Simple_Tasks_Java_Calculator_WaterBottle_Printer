@@ -17,17 +17,14 @@ public class PrinterTest {
         assertEquals(500, result);
     }
 
-//    @Test
-//    public void printCopies(){
-//        boolean result = printer.printCopies(30, 30);
-//        assertEquals(true, result);
-//    }
-
 
     @Test
     public void enoughPrint(){
-        int result = printer.print(10,5);
-        assertEquals(450, result);
+        printer.print(10,5);
+        int paperStock = printer.getPaperStock();
+        int tonerVolume = printer.getTonerVolume();
+        assertEquals(450,paperStock);
+        assertEquals(950, tonerVolume);
     }
 
     @Test
@@ -37,11 +34,6 @@ public class PrinterTest {
         assertEquals(510, result);
     }
 
-    @Test
-    public void printReduceTonerVolume(){
-        int paperStock = printer.printReduceTonerVolume(10, 10);
-        int result = printer.getTonerVolume();
-        assertEquals(900, result);
-    }
+
 
 }

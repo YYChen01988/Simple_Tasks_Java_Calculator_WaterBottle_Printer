@@ -15,24 +15,17 @@ public class Printer {
         return this.tonerVolume;
     }
 
-//    public boolean printCopies(int inputPaper, int copies){
-//        return inputPaper == copies ? true: false;
-//    }
-
-    public int print(int inputPaper, int copies){
+    public void print(int inputPaper, int copies){
         if (paperStock >= 5){
-            return paperStock -= inputPaper * copies;
+            paperStock -= inputPaper * copies;
+            tonerVolume -= inputPaper * copies * 1;
         }
-        return paperStock;
-    }
 
+    }
 
     public int refillPaper(int refillPaper){
         return paperStock += refillPaper;
     }
 
-    public int printReduceTonerVolume(int inputPaper, int copies){
-        return tonerVolume -= inputPaper * copies * 1;
-    }
 
 }
