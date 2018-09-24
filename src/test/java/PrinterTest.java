@@ -29,7 +29,7 @@ public class PrinterTest {
 
     @Test
     public void refillPaper(){
-        int paperStock = printer.refillPaper(10);
+        printer.refillPaper(10);
         int result = printer.getPaperStock();
         assertEquals(510, result);
     }

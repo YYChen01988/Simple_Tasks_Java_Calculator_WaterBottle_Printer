@@ -13,26 +13,26 @@ public class CalculatorTest {
 
     @Test
     public void add(){
-        int sum = calculator.add();
-        assertEquals(15, sum);
+        double sum = calculator.add();
+        assertEquals(15, sum,0);
     }
 
     @Test
     public void subtract(){
-        int result = calculator.subtract();
-        assertEquals(5, result);
+        double result = calculator.subtract();
+        assertEquals(5, result,0);
     }
 
     @Test
     public void multiply(){
-        int result = calculator.multiply();
-        assertEquals(50, result);
+        double result = calculator.multiply();
+        assertEquals(50, result,0);
     }
 
     @Test
     public void divide(){
-        int result = calculator.divide();
-        assertEquals(2, result);
+        double result = calculator.divide();
+        assertEquals(2, result, 0);
     }
 
 }

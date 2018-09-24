@@ -23,8 +23,8 @@ public class Printer {
 
     }
 
-    public int refillPaper(int refillPaper){
-        return paperStock += refillPaper;
+    public void refillPaper(int refillPaper){
+        paperStock += refillPaper;
     }
 
 
