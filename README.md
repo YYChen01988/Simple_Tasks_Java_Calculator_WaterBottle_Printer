@@ -6,12 +6,14 @@ Create 3 single classes with methods to perform some functionality.
 MVP:
 Calculator
 Create a Calculator class. This should have functions for Add, Subtract, Multiply and Divide, each taking in two integers to perform the calculations on.
+
 Water Bottle
 Create a water bottle class with a volume property.
 The volume should start at 100.
 Add a drink function that takes 10 from the volume each time it is called.
 Create an empty function that brings the volume down to 0.
 Create a fill function that fills the volume back to 100.
+
 Extension:
 Printer
 Create a Printer class that has a property for number of sheets of paper left.
