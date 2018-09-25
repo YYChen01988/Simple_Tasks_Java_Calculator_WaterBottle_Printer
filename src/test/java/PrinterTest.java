@@ -17,6 +17,12 @@ public class PrinterTest {
         assertEquals(500, result);
     }
 
+    @Test
+    public void getTonerVolume(){
+        int result = printer.getTonerVolume();
+        assertEquals(1000, result);
+    }
+
 
     @Test
     public void enoughPaperPrint(){
