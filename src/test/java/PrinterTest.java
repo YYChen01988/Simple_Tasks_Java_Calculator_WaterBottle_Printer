@@ -19,13 +19,24 @@ public class PrinterTest {
 
 
     @Test
-    public void enoughPrint(){
+    public void enoughPaperPrint(){
         printer.print(10,5);
         int paperStock = printer.getPaperStock();
         int tonerVolume = printer.getTonerVolume();
         assertEquals(450,paperStock);
         assertEquals(950, tonerVolume);
     }
+
+
+    @Test
+    public void notEnoughPaperPrint(){
+        printer.print(100,50);
+        int paperStock = printer.getPaperStock();
+        int tonerVolume = printer.getTonerVolume();
+        assertEquals(500,paperStock);
+        assertEquals(1000, tonerVolume);
+    }
+
 
     @Test
     public void refillPaper(){

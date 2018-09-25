@@ -16,9 +16,10 @@ public class Printer {
     }
 
     public void print(int inputPaper, int copies){
-        if (paperStock >= 5){
-            paperStock -= inputPaper * copies;
-            tonerVolume -= inputPaper * copies * 1;
+        int totalCopies = inputPaper * copies;
+        if (paperStock >= (totalCopies)){
+            paperStock -= totalCopies;
+            tonerVolume -= totalCopies * 1;
         }
 
     }
